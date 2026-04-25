@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
 import { CONTACT_EMAIL } from "@/lib/constants";
 
 export async function POST(req: NextRequest) {
@@ -14,15 +13,13 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || "smtp.gmail.com",
-      port: Number(process.env.SMTP_PORT) || 587,
-      secure: false,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-    });
+    const RESEND_API_KEY = process.env.RESEND_API_KEY;
+    const RESEND_FROM = process.env.RESEND_FROM || process.env.SMTP_USER || `no-reply@bengalconsulting.com`;
+
+    if (!RESEND_API_KEY) {
+      console.error("Missing RESEND_API_KEY environment variable");
+      return NextResponse.json({ error: "Email provider is not configured" }, { status: 500 });
+    }
 
     const emailHtml = `
 <!DOCTYPE html>
@@ -62,14 +59,29 @@ export async function POST(req: NextRequest) {
 </body>
 </html>`;
 
-    await transporter.sendMail({
-      from: `"Bengal Consulting Website" <${process.env.SMTP_USER}>`,
-      to: CONTACT_EMAIL,
-      replyTo: email,
+    const payload = {
+      from: RESEND_FROM,
+      to: [CONTACT_EMAIL],
+      reply_to: email,
       subject: `New Enquiry from ${name}${service ? ` — ${service}` : ""}`,
       html: emailHtml,
       text: `New enquiry from Bengal Consulting website\n\nName: ${name}\nEmail: ${email}\n${phone ? `Phone: ${phone}\n` : ""}${service ? `Service: ${service}\n` : ""}\nMessage:\n${message}`,
+    } as const;
+
+    const resp = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
     });
+
+    if (!resp.ok) {
+      const text = await resp.text().catch(() => "");
+      console.error("Resend API error:", resp.status, text);
+      return NextResponse.json({ error: "Failed to send email" }, { status: 502 });
+    }
 
     return NextResponse.json({ success: true }, { status: 200 });
   } catch (error) {
