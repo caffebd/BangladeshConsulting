@@ -84,7 +84,11 @@ export default async function ServicePage({ params }: ServicePageProps) {
             <h2 className="heading-section text-2xl text-primary mb-4">
               What is {name} in Bangladesh?
             </h2>
-            <p className="text-muted-foreground leading-relaxed text-base">{data.descriptionLong}</p>
+            {data.descriptionLong.split(/\n{2,}/).map((para, i) => (
+              <p key={i} className="text-muted-foreground leading-relaxed text-base">
+                {para}
+              </p>
+            ))}
           </div>
         </div>
       </section>
