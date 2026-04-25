@@ -472,7 +472,7 @@ export const serviceData: Record<string, ServicePageData> = {
 
   "national-university-certificate": {
     descriptionLong:
-      "The National University of Bangladesh is the largest university in the world by student enrollment, overseeing hundreds of affiliated colleges. Bengal Consulting assists graduates with certificate retrieval, transcript requests, certificate corrections, verification letters, and degree attestation for use abroad.",
+      "A Bangladesh National University (NU) certificate is an official academic document confirming the completion of undergraduate (Honours or Pass) or postgraduate (Master’s or PGD) programs at affiliated colleges. It may take the form of an original certificate, provisional certificate, or academic transcript, and is commonly used for employment, studying abroad, or immigration purposes.\n\nWe handle the entire workflow end-to-end: submitting applications, tracing records, requesting corrections if needed, arranging attestation or apostille for international use, and delivering the final documents securely to you. Bengal Consulting manages the entire process of obtaining, correcting, and attesting National University certificates on your behalf, liaising directly with the university and relevant government bodies.",
     steps: [
       {
         name: "Record Tracing",
