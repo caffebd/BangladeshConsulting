@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
     }
 
     const RESEND_API_KEY = process.env.RESEND_API_KEY;
-    const RESEND_FROM = process.env.RESEND_FROM || process.env.SMTP_USER || `no-reply@bengalconsulting.com`;
+    const RESEND_FROM = process.env.RESEND_FROM || process.env.SMTP_USER || `no-reply@bengalconsulting.services`;
 
     if (!RESEND_API_KEY) {
       console.error("Missing RESEND_API_KEY environment variable");
