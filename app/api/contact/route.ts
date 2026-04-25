@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
 import { CONTACT_EMAIL } from "@/lib/constants";
 
 export async function POST(req: NextRequest) {
@@ -59,27 +60,21 @@ export async function POST(req: NextRequest) {
 </body>
 </html>`;
 
-    const payload = {
-      from: RESEND_FROM,
-      to: [CONTACT_EMAIL],
-      reply_to: email,
-      subject: `New Enquiry from ${name}${service ? ` — ${service}` : ""}`,
-      html: emailHtml,
-      text: `New enquiry from Bengal Consulting website\n\nName: ${name}\nEmail: ${email}\n${phone ? `Phone: ${phone}\n` : ""}${service ? `Service: ${service}\n` : ""}\nMessage:\n${message}`,
-    } as const;
+    const payloadText = `New enquiry from Bengal Consulting website\n\nName: ${name}\nEmail: ${email}\n${phone ? `Phone: ${phone}\n` : ""}${service ? `Service: ${service}\n` : ""}\nMessage:\n${message}`;
 
-    const resp = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${RESEND_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    });
+    const resend = new Resend(RESEND_API_KEY);
 
-    if (!resp.ok) {
-      const text = await resp.text().catch(() => "");
-      console.error("Resend API error:", resp.status, text);
+    try {
+      await resend.emails.send({
+        from: RESEND_FROM,
+        to: CONTACT_EMAIL,
+        replyTo: email,
+        subject: `New Enquiry from ${name}${service ? ` — ${service}` : ""}`,
+        html: emailHtml,
+        text: payloadText,
+      });
+    } catch (err) {
+      console.error("Resend SDK error:", err);
       return NextResponse.json({ error: "Failed to send email" }, { status: 502 });
     }
 
