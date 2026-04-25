@@ -1,0 +1,200 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "getStarted": "Get Started",
+    "home": "Home"
+  },
+  "hero": {
+    "tagline": "Bangladesh Made Simple",
+    "headline": "Expert Help Navigating Bangladesh's Bureaucracy",
+    "subheadline": "Professional consulting services for Bangladeshis at home and abroad. From company formation to government certificates — we handle it all so you don't have to.",
+    "ctaPrimary": "View Our Services",
+    "ctaWhatsApp": "WhatsApp Us",
+    "ctaContact": "Contact Us",
+    "badge1": "10+ Years Experience",
+    "badge2": "Access to Expert Accountants & Solicitors",
+    "badge3": "Fully Managed Service",
+    "badge4": "Serving Clients Worldwide",
+    "trustLine": "Trusted by Bangladeshis across the UK, USA, Middle East & beyond"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive support for all your Bangladesh bureaucracy needs",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "viewAll": "View All Services",
+    "companyFormation": {
+      "name": "Company Formation",
+      "description": "Register your business in Bangladesh — for locals, expats and foreign nationals.",
+      "short": "Business registration for locals, expats & foreign nationals"
+    },
+    "bankAccount": {
+      "name": "Bank Account Opening",
+      "description": "Open a personal or business bank account in Bangladesh with expert assistance.",
+      "short": "Personal & business bank accounts"
+    },
+    "etinVatBin": {
+      "name": "eTIN, VAT & BIN Services",
+      "description": "Obtain your e-TIN, VAT registration and Business Identification Number (BIN) with ease.",
+      "short": "Tax registration & compliance documents"
+    },
+    "tradeLicence": {
+      "name": "City Corporation Trade Licence",
+      "description": "Apply for and renew your City Corporation Trade Licence quickly and correctly.",
+      "short": "City Corporation Trade Licence applications & renewals"
+    },
+    "bstiMark": {
+      "name": "BSTI Mark",
+      "description": "Obtain Bangladesh Standards and Testing Institution (BSTI) product certification.",
+      "short": "Product standards certification"
+    },
+    "teaBoardLicence": {
+      "name": "Tea Board Licence",
+      "description": "Apply for your Bangladesh Tea Board licence for tea production and trade.",
+      "short": "Tea production & trade licensing"
+    },
+    "passport": {
+      "name": "Passport Services",
+      "description": "New passport applications, amendments and corrections handled professionally.",
+      "short": "New applications, amendments & corrections"
+    },
+    "nationalId": {
+      "name": "National ID Card",
+      "description": "Apply for a new NID, make corrections or updates with our expert guidance.",
+      "short": "NID applications & corrections"
+    },
+    "birthRegistration": {
+      "name": "Birth Registration Certificate",
+      "description": "Obtain or correct birth registration certificates efficiently.",
+      "short": "Certificates & corrections"
+    },
+    "nationalUniversity": {
+      "name": "National University Certificate",
+      "description": "Retrieve, verify or correct National University certificates and transcripts.",
+      "short": "Certificate retrieval & verification"
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Our simple three-step process gets your documents sorted without the stress",
+    "step1Title": "Tell Us What You Need",
+    "step1Desc": "Contact us via WhatsApp or our form. We'll assess your requirements and explain exactly what's needed.",
+    "step2Title": "We Handle Everything",
+    "step2Desc": "Our team of experts, accountants and solicitors prepares all paperwork and liaises with the relevant authorities on your behalf.",
+    "step3Title": "Receive Your Documents",
+    "step3Desc": "We deliver your completed documents or certificates, keeping you updated every step of the way."
+  },
+  "trust": {
+    "title": "Why Choose Bengal Consulting?",
+    "subtitle": "Years of real, on-the-ground experience in Bangladesh sets us apart",
+    "reason1Title": "Real Ground Experience",
+    "reason1Desc": "We have years of experience navigating Bangladesh's bureaucracy — not just theoretical knowledge.",
+    "reason2Title": "Expert Network",
+    "reason2Desc": "Direct access to qualified accountants, solicitors and government-registered agents.",
+    "reason3Title": "Expat Specialists",
+    "reason3Desc": "We understand the unique challenges faced by Bangladeshis living abroad and design our services accordingly.",
+    "reason4Title": "Transparent Process",
+    "reason4Desc": "We keep you informed at every step. No hidden fees, no surprises.",
+    "reason5Title": "All-in-One Service",
+    "reason5Desc": "From a single certificate to full company formation — we cover every aspect of Bangladesh compliance.",
+    "reason6Title": "Worldwide Clients",
+    "reason6Desc": "We serve clients across the UK, USA, Canada, Middle East and beyond, all remotely and efficiently."
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to get started? Contact us today for a free consultation.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your full name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "your@email.com",
+    "phoneLabel": "Phone / WhatsApp",
+    "phonePlaceholder": "+44 7xxx xxxxxx",
+    "serviceLabel": "Service Required",
+    "servicePlaceholder": "Select a service",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Please describe what you need help with...",
+    "submitButton": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message Sent!",
+    "successDesc": "Thank you for contacting us. We'll get back to you within 24 hours.",
+    "errorTitle": "Something went wrong",
+    "errorDesc": "Please try again or contact us directly via WhatsApp.",
+    "whatsappLabel": "WhatsApp",
+    "emailContactLabel": "Email",
+    "orContact": "Or reach us directly",
+    "ctaTitle": "Ready to Get Started?",
+    "ctaSubtitle": "Speak to our experts today — no obligation, no jargon.",
+    "ctaButton": "Contact Us Now"
+  },
+  "about": {
+    "title": "About Bengal Consulting",
+    "subtitle": "Real experience. Real experts. Real results.",
+    "story": "Bengal Consulting was founded with a simple mission: to make Bangladesh's complex bureaucratic processes accessible to everyone — whether you're a local entrepreneur, an expat living abroad, or a foreign national looking to invest in Bangladesh.",
+    "missionTitle": "Our Mission",
+    "missionText": "To simplify Bangladesh's bureaucracy for every client, providing expert guidance backed by years of real, on-the-ground experience.",
+    "expertiseTitle": "Our Expertise",
+    "expertiseText": "Our team includes qualified accountants, legal experts and government-registered agents who have spent years helping individuals and businesses navigate the National Board of Revenue, Bangladesh Bank, RJSC, City Corporations and other government bodies.",
+    "expatsTitle": "Serving the Diaspora",
+    "expatsText": "A significant part of our business serves the Bangladeshi diaspora — expats in the UK, USA, Middle East and beyond who need assistance with official matters back home. We bridge the distance and the complexity.",
+    "valuesTitle": "Our Values",
+    "value1": "Transparency",
+    "value2": "Expertise",
+    "value3": "Reliability",
+    "value4": "Accessibility"
+  },
+  "footer": {
+    "tagline": "Expert Bangladesh consulting for locals and expats worldwide.",
+    "servicesTitle": "Services",
+    "companyTitle": "Company",
+    "contactTitle": "Contact Us",
+    "about": "About Us",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved.",
+    "whatsapp": "WhatsApp: +88 01723957059",
+    "email": "mdkobiruddin@gmail.com",
+    "disclaimer": "Prices shown are indicative. Contact us for a tailored quote."
+  },
+  "common": {
+    "placeholder_price": "From BDT 5,000",
+    "contactUs": "Contact Us",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "whatsappUs": "WhatsApp Us",
+    "readMore": "Read More",
+    "backToServices": "← Back to Services",
+    "freeConsultation": "Free Consultation",
+    "requestService": "Request This Service",
+    "loading": "Loading...",
+    "required": "Required",
+    "optional": "Optional"
+  },
+  "servicePage": {
+    "priceLabel": "Starting From",
+    "timeLabel": "Typical Timeframe",
+    "documentsLabel": "Documents Required",
+    "faqTitle": "Frequently Asked Questions",
+    "processTitle": "Our Process",
+    "ctaTitle": "Ready to Get Started?",
+    "ctaSubtitle": "Contact us today for a free, no-obligation consultation.",
+    "ctaButton": "Request This Service",
+    "sidebarTitle": "Get This Service",
+    "sidebarSubtitle": "Speak to an expert today",
+    "relatedTitle": "Related Services"
+  },
+  "metadata": {
+    "siteTitle": "Bengal Consulting — Expert Bangladesh Bureaucracy Services",
+    "siteDescription": "Professional consulting services in Bangladesh for locals and expats. Company formation, bank accounts, eTIN, VAT, passports, NID, birth certificates and more.",
+    "homeTitle": "Bengal Consulting — Expert Bangladesh Bureaucracy Services",
+    "homeDesc": "Professional consulting for Bangladeshis at home and abroad. Company formation, eTIN, VAT, passports, NID and more.",
+    "aboutTitle": "About Us — Bengal Consulting",
+    "aboutDesc": "Learn about Bengal Consulting — years of real experience navigating Bangladesh's bureaucracy for locals and expats worldwide.",
+    "contactTitle": "Contact Bengal Consulting — Free Consultation",
+    "contactDesc": "Get in touch with Bengal Consulting for a free consultation about your Bangladesh bureaucracy needs.",
+    "servicesTitle": "All Services — Bengal Consulting",
+    "servicesDesc": "Full range of Bangladesh consulting services: company formation, bank accounts, eTIN, VAT, BIN, passports, NID, birth certificates and more."
+  }
+}
