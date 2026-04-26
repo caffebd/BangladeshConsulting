@@ -113,6 +113,7 @@
     "phonePlaceholder": "+44 7xxx xxxxxx",
     "serviceLabel": "Service Required",
     "servicePlaceholder": "Select a service",
+    "serviceOther": "Other",
     "messageLabel": "Message",
     "messagePlaceholder": "Please describe what you need help with...",
     "submitButton": "Send Message",

@@ -134,20 +134,41 @@ export default function ContactForm() {
                 {t("serviceLabel")}{" "}
                 <span className="text-xs text-muted-foreground font-normal">(optional)</span>
               </FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                <FormControl>
-                  <SelectTrigger>
-                    <SelectValue placeholder={t("servicePlaceholder")} />
-                  </SelectTrigger>
-                </FormControl>
-                <SelectContent>
-                  {SERVICES.map((s) => (
-                    <SelectItem key={s.slug} value={s.slug}>
-                      {tServices(`${s.key}.name`)}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+              {/** compute localized label for selected value so the trigger shows translated text */}
+              {(() => {
+                const selectedSlug = field.value;
+                let selectedLabel: string | undefined;
+                if (selectedSlug) {
+                  if (selectedSlug === "other") {
+                    selectedLabel = t("serviceOther");
+                  } else {
+                    const svc = SERVICES.find((x) => x.slug === selectedSlug);
+                    selectedLabel = svc ? tServices(`${svc.key}.name`) : selectedSlug;
+                  }
+                }
+
+                return (
+                  <Select value={field.value ?? ""} onValueChange={field.onChange}>
+                    <FormControl>
+                      <SelectTrigger className="w-full min-h-[56px] rounded-lg px-4">
+                        <SelectValue placeholder={t("servicePlaceholder")}>
+                          {selectedLabel}
+                        </SelectValue>
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent className="min-w-[18rem] max-w-xl">
+                      {SERVICES.map((s) => (
+                        <SelectItem key={s.slug} value={s.slug} className="whitespace-normal">
+                          {tServices(`${s.key}.name`)}
+                        </SelectItem>
+                      ))}
+                      <SelectItem value="other" className="whitespace-normal">
+                        {t("serviceOther")}
+                      </SelectItem>
+                    </SelectContent>
+                  </Select>
+                );
+              })()}
               <FormMessage />
             </FormItem>
           )}
