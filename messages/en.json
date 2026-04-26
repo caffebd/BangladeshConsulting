@@ -21,7 +21,7 @@
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Comprehensive support for all your Bangladesh bureaucracy needs",
+    "subtitle": "Comprehensive support for all your Bangladesh government needs",
     "learnMore": "Learn More",
     "getStarted": "Get Started",
     "viewAll": "View All Services",
@@ -90,7 +90,7 @@
     "title": "Why Choose Bengal Consulting?",
     "subtitle": "Years of real, on-the-ground experience in Bangladesh sets us apart",
     "reason1Title": "Real Ground Experience",
-    "reason1Desc": "We have years of experience navigating Bangladesh's bureaucracy — not just theoretical knowledge.",
+    "reason1Desc": "We have years of experience navigating Bangladesh's government — not just theoretical knowledge.",
     "reason2Title": "Expert Network",
     "reason2Desc": "Direct access to qualified accountants, solicitors and government-registered agents.",
     "reason3Title": "Expat Specialists",
@@ -133,7 +133,7 @@
     "subtitle": "Real experience. Real experts. Real results.",
     "story": "Bengal Consulting was founded with a simple mission: to make Bangladesh's complex bureaucratic processes accessible to everyone — whether you're a local entrepreneur, an expat living abroad, or a foreign national looking to invest in Bangladesh.",
     "missionTitle": "Our Mission",
-    "missionText": "To simplify Bangladesh's bureaucracy for every client, providing expert guidance backed by years of real, on-the-ground experience.",
+    "missionText": "To simplify Bangladesh's government for every client, providing expert guidance backed by years of real, on-the-ground experience.",
     "expertiseTitle": "Our Expertise",
     "expertiseText": "Our team includes qualified accountants, legal experts and government-registered agents who have spent years helping individuals and businesses navigate the National Board of Revenue, Bangladesh Bank, RJSC, City Corporations and other government bodies.",
     "expatsTitle": "Serving the Diaspora",
@@ -186,14 +186,14 @@
     "relatedTitle": "Related Services"
   },
   "metadata": {
-    "siteTitle": "Bengal Consulting — Expert Bangladesh Bureaucracy Services",
+    "siteTitle": "Bengal Consulting — Expert Bangladesh Government Services",
     "siteDescription": "Professional consulting services in Bangladesh for locals and expats. Company formation, bank accounts, eTIN, VAT, passports, NID, birth certificates and more.",
-    "homeTitle": "Bengal Consulting — Expert Bangladesh Bureaucracy Services",
+    "homeTitle": "Bengal Consulting — Expert Government government Services",
     "homeDesc": "Professional consulting for Bangladeshis at home and abroad. Company formation, eTIN, VAT, passports, NID and more.",
     "aboutTitle": "About Us — Bengal Consulting",
-    "aboutDesc": "Learn about Bengal Consulting — years of real experience navigating Bangladesh's bureaucracy for locals and expats worldwide.",
+    "aboutDesc": "Learn about Bengal Consulting — years of real experience navigating Bangladesh's government for locals and expats worldwide.",
     "contactTitle": "Contact Bengal Consulting — Free Consultation",
-    "contactDesc": "Get in touch with Bengal Consulting for a free consultation about your Bangladesh bureaucracy needs.",
+    "contactDesc": "Get in touch with Bengal Consulting for a free consultation about your Bangladesh government needs.",
     "servicesTitle": "All Services — Bengal Consulting",
     "servicesDesc": "Full range of Bangladesh consulting services: company formation, bank accounts, eTIN, VAT, BIN, passports, NID, birth certificates and more."
   }
