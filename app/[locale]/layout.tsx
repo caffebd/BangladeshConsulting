@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Kumbh_Sans, Open_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
@@ -40,6 +41,20 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+const kumbh = Kumbh_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+  variable: "--font-heading",
+  display: "swap",
+});
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
 export default async function LocaleLayout({
   children,
   params,
@@ -56,7 +71,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} className={`${kumbh.variable} ${openSans.variable}`} suppressHydrationWarning>
       <body>
         <NextIntlClientProvider messages={messages}>
           <div className="flex min-h-screen flex-col">

@@ -22,6 +22,8 @@ export default function HeroSection() {
         fill
         className="object-cover object-center"
         priority
+        sizes="100vw"
+        quality={60}
       />
 
       {/* Dark gradient overlay: strong on the left where text sits, fades to semi-transparent right */}
